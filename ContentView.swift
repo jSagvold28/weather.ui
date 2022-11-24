@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Weather1
+//  weather.ui
 //
-//  Created by Jayce Sagvold on 11/23/22.
+//  Created by Jayce Sagvold on 11/24/22.
 //
 
 import SwiftUI
@@ -11,30 +11,29 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                           .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)
+            
+            
             VStack {
-                Text("Los Angeles")
-                    .bold()
+                Text("Los Angeles, California")
                     .foregroundColor(.white)
                     .font(.largeTitle)
-                    .padding(.vertical, 6)
-                
-                Text("California")
-                    .font(.title2)
-                    .foregroundColor(.white)
-                Text("United States")
-                    .foregroundColor(.white)
-                    .padding(.bottom, 100)
-                Text("  70°")
-                    .font(.system(size: 100))
                     .bold()
+                    .padding(.top, 25)
+                    .padding(.bottom, 85)
+                
+                Text("80°")
+                    .font(.system(size: 105))
                     .foregroundColor(.white)
-                    .padding(.bottom, 25)
-                Image(systemName: "sun.min")
-                    .font(.system(size: 140))
+                    .padding(.bottom, 75)
+                
+                Image(systemName: "cloud.sun")
+                    .font(.system(size: 100))
                     .foregroundColor(.yellow)
                 
-                Spacer()
+                
+                
+            Spacer()
             }
         }
     }
