@@ -31,6 +31,16 @@ struct ContentView: View {
                     .font(.system(size: 100))
                     .foregroundColor(.yellow)
                 
+                // Condition
+                
+                 Text("Sunny")
+                    .font(.title2)
+                    .padding(.top, 25)
+                    .bold()
+                    .fontWeight(.medium)
+                    .foregroundColor(.yellow)
+                
+                
                 
                 
             Spacer()
